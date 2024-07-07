@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a2a2a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Add scroll if content overflows */
+    max-height: 90vh; /* Ensure the container does not exceed viewport height */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img-container {
+    margin-right: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h1 {
+    margin: 10px 0 5px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.social-links {
+    margin-top: 20px; /* Added margin to move the social links down */
+}
+
+.social-links a {
+    margin: 0 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+#education, #skills {
+    width: 48%;
+}
+
+#education p, #skills ul {
+    line-height: 1.6;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    width: 50%;
+}
+
+a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
