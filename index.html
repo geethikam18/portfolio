@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geethika's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('section').forEach(section => {
+        section.style.display = 'none';
+        section.classList.remove('fade-in');
+      });
+      const targetSection = document.getElementById(sectionId);
+      targetSection.style.display = 'block';
+      setTimeout(() => {
+        targetSection.classList.add('fade-in');
+      }, 10);
+    }
+
+    window.onload = function() {
+      showSection('home');
+    };
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('projects')">Projects</a>
+    <a href="#" onclick="showSection('resume')">Resume</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="top-layer fade">
+    <div class="main-content">
+      <div class="text-content">
+        <h1>Hi, I’m Geethika</h1>
+        <h2>Aspiring Software Engineer | Tech Enthusiast | Passionate Learner</h2>
+      </div>
+
+      <div class="social-icons">
+        <a href="mailto:geethikareddy1829@gmail.com" target="_blank">
+          <img src="email.png" alt="Gmail Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/manchuru-geethika-910314251/" target="_blank">
+          <img src="linkedin.png" alt="LinkedIn Logo">
+        </a>
+        <a href="https://github.com/geethikam18" target="_blank">
+          <img src="github.png" alt="GitHub Logo">
+        </a>
+        <a href="https://leetcode.com/geethika1829/" target="_blank">
+          <img src="leetcode.png" alt="LeetCode Logo">
+        </a>
+
+      </div>
+    </div>
+
+    <svg viewBox="0 0 1440 150" class="wave">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,64L60,69.3C120,75,240,85,360,101.3C480,117,600,139,720,138.7C840,139,960,117,1080,96C1200,75,1320,53,1380,42.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section fade">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>Hello 🙋🏻‍♀️</p>
+      <p>I’m Geethika, a software engineer passionate about creating practical and efficient software solutions. I focus on developing systems that solve real-world problems while staying curious and continuously learning along the way. I specialize in building user-friendly, reliable software that works seamlessly. My projects reflect my love for problem-solving, and I’m always exploring new tools and techniques to stay aligned with the latest trends in software development. While software engineering is my core strength, I’m also intrigued by the broader potential of AI and how emerging technologies can enhance the systems I create. I’m always eager to take on new challenges, expand my skillset, and contribute to meaningful, impactful work.</p>
+      <p>Outside the tech world, I enjoy traveling, discovering new places, and learning about different cultures — experiences that often spark fresh ideas and creativity in my work. Looking ahead, I’m excited to continue growing as a software engineer while exploring the intersection of technology and business, with the goal of eventually creating something of my own that truly makes a difference.</p>
+      <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/manchuru-geethika-910314251/" target="_blank">LinkedIn</a>, explore my projects on <a href="https://github.com/geethikam18" target="_blank">GitHub</a>, or check out my problem-solving skills on <a href="https://leetcode.com/geethikam18/" target="_blank">LeetCode</a>.</p>
+      <p>Thanks for visiting!</p>
+    </div>
+
+    <!-- Education Section -->
+    <h2 class="section-heading">Education</h2>
+    <div class="about-subsection edu-subsection">
+      <div class="edu-container">
+        <div class="edu-card">
+          <h3 class="edu-title">Vellore Institute of Technology, Chennai</h3>
+          <p><strong>B.Tech in Computer Science</strong><br>2021 – 2025</p>
+          <p><strong>CGPA:</strong> 9.04</p>
+        </div>
+        <div class="edu-card">
+          <h3 class="edu-title">Sri Chaitanya Junior College, Tirupati</h3>
+          <p><strong>Intermediate (MPC)</strong><br>2019 – 2021</p>
+          <p><strong>Percentage:</strong> 91.7%</p>
+        </div>
+        <div class="edu-card">
+          <h3 class="edu-title">Narayana High School, Tirupati</h3>
+          <p><strong>10th Standard</strong><br>2018 – 2019</p>
+          <p><strong>GPA:</strong> 10.0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <h2 class="section-heading">Skills</h2>
+    <div class="about-subsection skills-subsection">
+      <div class="skills-grid">
+        <span>Python</span>
+        <span>Data Structures & Algorithms</span>
+        <span>SQL</span>
+        <span>Tkinter</span>
+        <span>Power BI (Basics)</span>
+        <span>Problem Solving</span>
+        <span>Creativity</span>
+        <span>Teamwork</span>
+        <span>Critical Thinking</span>
+        <span>Analytical Skills</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section fade">
+  <h2 class="section-heading">Projects</h2>
+  <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Energy-Efficient IoT System Using RL and KD</h3>
+        <p>This project introduces an IoT-based smart agriculture framework that utilizes federated learning, edge computing, and model optimization to reduce energy consumption. We simulated real-world sensor behavior using synthetic data and implemented clustering algorithms to improve resource management. Two models were compared — Reinforcement Learning (RL) and Knowledge Distillation (KD) — with KD achieving a smoother and more accurate 8.41% reduction in energy usage. The study highlights KD as the most effective approach for balancing generalization and efficiency in smart farming.</p>
+        <p><strong>Technologies:</strong> IoT, Edge Computing, Federated Learning, Decision Trees, Reinforcement Learning, Knowledge Distillation</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Multimodal Speech Emotion Recognition</h3>
+        <p>We explored Speech Emotion Recognition (SER) using CNN, LSTM, and Bi-LSTM with multi-head attention across four public datasets. LSTM outperformed other models with 99.91% accuracy, leveraging its strength in learning temporal patterns. CNN also showed promising spatial feature extraction, while Bi-LSTM faced overfitting. This project demonstrates how hybrid models can optimize real-time SER applications in healthcare and customer service, and paves the way for transformer-based and multimodal SER systems.</p>
+        <p><strong>Technologies:</strong> Python, CNN, LSTM, Bi-LSTM, Multi-head Attention </p>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10895442" target="_blank">View Published Paper</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3>Explainable AI for Pneumonia Diagnosis</h3>
+        <p>This project focuses on diagnosing pneumonia from chest X-ray images using a CNN-based model combined with XAI techniques like LIME, SHAP, and Grad-CAM. The model enhances trust and transparency in healthcare by explaining predictions visually, helping radiologists interpret results. Trained on large medical datasets, the model achieved high accuracy while improving interpretability — addressing a crucial challenge in real-world medical AI systems. The paper was awarded Best Paper at the IAAA conference.</p>
+        <p><strong>Technologies:</strong> Python, CNN, LIME, SHAP, Grad-CAM, OpenCV </p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <h3>Smart Glove for Sign Language Translation</h3>
+        <p>This IoT-based wearable device translates sign language into text and speech in real time. The glove integrates flex sensors to track finger movement and a gyroscope to detect hand orientation. Signals are processed to recognize specific gestures and convert them into meaningful output. The system enhances communication accessibility for the hearing- and speech-impaired, offering a real-time, accurate, and user-friendly solution to bridge language barriers.</p>
+        <p><strong>Technologies:</strong> Arduino, Flex Sensors, Gyroscope, Embedded C, Python</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section fade">
+    <h2 class="section-heading">Resume</h2>
+    <div class="resume-button-wrapper">
+      <a href="Geethika_Resume_Upd_24.pdf" target="_blank" class="resume-button">View My Resume</a>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section fade">
+    <h2 class="section-heading">Contact Me</h2>
+    <div class="contact-box">
+      <p><strong>Email:</strong> geethikareddy1829@gmail.com</p>
+      <p><strong>Phone:</strong> 9959363789</p>
+    </div>
+  </section>
+
+
+</body>
+</html>
+
